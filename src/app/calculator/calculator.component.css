@@ -1,0 +1,48 @@
+.display {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    color: rgb(0, 47, 255);
+    font-size: 80px;
+}
+button.btn-item-import-1 {
+    background-color: #57a12b;
+    grid-area: 1/4/3/5;
+}
+
+button.btn-item-import-2 {
+    background-color: #57a12b;
+    grid-area: 3/4/5/5;
+}
+
+button.btn-operador {
+    background-color: #57a12b;
+    height: 70px;
+}
+
+button.btn-active {
+    background-color: rgb(113, 114, 113);
+    grid-column: 3/5;
+}
+
+button.btn-item {
+    background-color: #1484ee;
+    height: 70px;
+}
+
+.content-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 0;
+}
+
+.btn {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.btn:hover {
+    background-color: #4e5555;
+}

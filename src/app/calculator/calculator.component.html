@@ -1,0 +1,34 @@
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Calculator</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body calculadora">
+                <input type="text" class="display" [value]="nuemroActual" disabled />
+                <div class="content-buttons">
+                    <button type="button" (click)="clear()" class="all-clear btn btn-operador" value="all-clear">AC</button>
+                    <button type="button" (click)="getOperation('*')" class="btn btn-operador" value="*">&times;</button>
+                    <button type="button" (click)="getOperation('/')" class="btn btn-operador" value="/">&divide;</button>
+                    <button type="button" (click)="getOperation('+')" class="btn btn-item-import-1" value="+">+</button>
+                    <button type="button" (click)="getOperation('-')" class="btn btn-item-import-2" value="-">-</button>
+                    <button type="button" (click)="getNumber('7')" class="btn btn-item" value="7">7</button>
+                    <button type="button" (click)="getNumber('8')" class="btn btn-item" value="8">8</button>
+                    <button type="button" (click)="getNumber('9')" class="btn btn-item" value="9">9</button>
+                    <button type="button" (click)="getNumber('4')" class="btn btn-item" value="4">4</button>
+                    <button type="button" (click)="getNumber('5')" class="btn btn-item" value="5">5</button>
+                    <button type="button" (click)="getNumber('6')" class="btn btn-item" value="6">6</button>
+                    <button type="button" (click)="getNumber('1')" class="btn btn-item" value="1">1</button>
+                    <button type="button" (click)="getNumber('2')" class="btn btn-item" value="2">2</button>
+                    <button type="button" (click)="getNumber('3')" class="btn btn-item" value="3">3</button>
+                    <button type="button" (click)="getDecimal()" class="btn-item btn" value=".">.</button>
+                    <button type="button" (click)="getNumber('0')" class="btn btn-item" value="0">0</button>
+                    <button type="button" (click)="getOperation('=')" class="btn btn-active"
+                        value="=">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
