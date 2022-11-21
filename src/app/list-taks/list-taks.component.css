@@ -1,0 +1,19 @@
+.navbar {
+    background-color: #8fbfe5;
+    display: flexbox;
+}
+
+.navbar-inter {
+    color: #0739c2;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+}
+
+.card-header-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-bottom-style: solid;
+    border-color: #0739c2;
+}

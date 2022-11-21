@@ -1,38 +1,51 @@
-<h1>Proyecto lista de tareas</h1>
-<div class="container">
-    <div class="card-header-flex">
-        <h3>Gestor de tareas</h3>
-        <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#registerModal">Insertar</button>
+<main>
+    <nav class="navbar">
+        <div class="container navbar-inter">
+            <a routerLink="/home">
+                <img src="https://img.icons8.com/ios-filled/50/000000/reply-arrow.png" />
+            </a>
+            <h1>Proyecto lista de tareas</h1>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card-header-flex">
+            <h3>Gestor de tareas</h3>
+            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#registerModal">Insertar</button>
+        </div>
+        <div class="car-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>TAREA</th>
+                        <th>ESTADO</th>
+                        <th>ACCIONES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <div class="buttons-acciones">
+                                <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                                    data-bs-target="#editarModal">
+                                    <img src="../assets/svg/edit.svg" alt="">
+                                </button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#eliminarModal">
+                                    <img src="../assets/svg/delete.svg" alt="">
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <div class="car-body">
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>TAREA</th>
-                    <th>ESTADO</th>
-                    <th>ACCIONES</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="buttons-acciones">
-                            <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                data-bs-target="#editarModal">
-                                <img src="../assets/svg/edit.svg" alt="">
-                            </button>
-                            <button type="button" class="btn btn-primary"
-                                data-bs-toggle="modal" data-bs-target="#eliminarModal">
-                                <img src="../assets/svg/delete.svg" alt="">
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
+</main>
