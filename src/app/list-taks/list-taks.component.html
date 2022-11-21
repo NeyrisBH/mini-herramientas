@@ -27,10 +27,10 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                    <tr *ngFor="let tarea of tareas">
+                        <td>{{tarea.id}}</td>
+                        <td>{{tarea.descripcion}}</td>
+                        <td>{{tarea.estado}}</td>
                         <td>
                             <div class="buttons-acciones">
                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
