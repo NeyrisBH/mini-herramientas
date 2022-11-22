@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ListTaksService } from './list-taks.service'
+import { ListareasService } from 'src/app/sevices/listareas.service';
 
 @Component({
   selector: 'app-list-taks',
@@ -15,21 +15,26 @@ export class ListTaksComponent implements OnInit {
     estado: ''
   }
 
-  constructor(
-    private listtaksService: ListTaksService
-  ) { }
+  constructor(private listareasService: ListareasService) { }
 
   ngOnInit(): void {
     this.load();
   }
 
+  // ver(){
+  //   this.listareasService.getAll()
+  //   .subscribe(data => {
+  //     this.tareas = data
+  //   })
+  // }
+
   load(){
-    this.listtaksService.create(this.nuevaTarea)
+    this.listareasService.create(this.nuevaTarea)
     .subscribe((data: any) => this.nuevaTarea = data)
   }
 
   crear() {
-    this.listtaksService.create(this.nuevaTarea)
+    this.listareasService.create(this.nuevaTarea)
     .subscribe(() => {
       this.load();
       this.nuevaTarea = {
@@ -45,9 +50,9 @@ export class ListTaksComponent implements OnInit {
   }
 
   delete(data: any){
-    this.listtaksService.delete(data)
+    this.listareasService.delete(data)
     .subscribe(() => {
-      this.listtaksService.getAll();
+      this.listareasService.getAll();
     })
   }
 
